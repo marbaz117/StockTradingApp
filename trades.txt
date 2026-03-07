@@ -1,0 +1,6 @@
+Share [buyer=user2, seller=user2, company=TCS, quantity=10, amount=3901.0]
+Share [buyer=user1, seller=user3, company=TCS, quantity=10, amount=3901.0]
+Share [buyer=user3, seller=user1, company=TCS, quantity=10, amount=3901.0]
+Share [buyer=user1, seller=user1, company=TCS, quantity=10, amount=3901.0]
+Share [buyer=user3, seller=user2, company=TCS, quantity=10, amount=3901.0]
+Share [buyer=user2, seller=user3, company=TCS, quantity=10, amount=3901.0]

@@ -1,3 +1,5 @@
+package Model;
+
 public class Share {
     private String buyer;
     private String seller;
