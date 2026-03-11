@@ -15,6 +15,26 @@ public class Share {
         this.seller = seller;
     }
 
+    public String getBuyer() {
+        return buyer;
+    }
+
+    public String getSeller() {
+        return seller;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
     @Override
     public String toString() {
         return "Share [buyer=" + buyer + ", seller=" + seller + ", company=" + company + ", quantity=" + quantity

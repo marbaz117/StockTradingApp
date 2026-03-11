@@ -3,7 +3,10 @@ package Model;
 import java.time.LocalDateTime;
 
 public class Order {
-
+    public enum Type{
+        BUY,
+        SELL
+    }
     private String orderId;
     private String userId;
     private String symbol;
@@ -11,6 +14,18 @@ public class Order {
     private double price;
     private Type type;
     private LocalDateTime localTime;
+    public Order(String orderId, String userId, String symbol,
+             int quantity, double price, Type type,
+             LocalDateTime timestamp) {
+
+    this.orderId = orderId;
+    this.userId = userId;
+    this.symbol = symbol;
+    this.quantity = quantity;
+    this.price = price;
+    this.type = type;
+    this.localTime = timestamp;
+}
     public Order(String orderId,String userId,String symbol,int quantity,double price,Type type) {
         this.localTime = LocalDateTime.now();
         this.orderId = orderId;
@@ -48,13 +63,8 @@ public class Order {
     public LocalDateTime getLocalTime() {
         return localTime;
     }
-    public enum Type{
-        BUY,
-        SELL
-    }
     public void reduceQuantity(int qty){
         this.quantity-=qty;
     }
-
 
 }

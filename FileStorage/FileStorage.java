@@ -13,10 +13,8 @@ public class FileStorage {
 
             writer.close();
 
-        } catch (IOException e) {
-
+        } catch (IOException e){
             e.printStackTrace();
-
         }
 
     }

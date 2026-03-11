@@ -18,7 +18,7 @@ public class SubmitOrder implements Runnable{
                 UUID.randomUUID().toString(),
                 user,
                 "TCS",
-                10,
+                i+1,
                 3900+i,
                 i%2==0 ? Order.Type.BUY : Order.Type.SELL
             );  
